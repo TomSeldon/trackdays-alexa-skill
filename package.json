@@ -1,0 +1,11 @@
+{
+  "name": "trackdays-alexa-skill",
+  "version": "1.0.0",
+  "description": "Alexa skill for obtaining informarion about upcoming track days.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tom Seldon <tom@tomseldon.co.uk>",
+  "license": "ISC"
+}
