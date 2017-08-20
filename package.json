@@ -1,11 +1,15 @@
 {
-  "name": "trackdays-alexa-skill",
-  "version": "1.0.0",
-  "description": "Alexa skill for obtaining informarion about upcoming track days.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Tom Seldon <tom@tomseldon.co.uk>",
-  "license": "ISC"
+    "name": "trackdays-alexa-skill",
+    "version": "1.0.0",
+    "description": "Alexa skill for obtaining information about upcoming track days.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Tom Seldon <tom@tomseldon.co.uk>",
+    "license": "ISC",
+    "dependencies": {
+        "@trackdays-web-scraper/trackdays-co-uk": "0.0.1",
+        "alexa-sdk": "^1.0.12"
+    }
 }
