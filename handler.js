@@ -7,8 +7,8 @@ const noopHandler = (event, context, callback) => callback();
 const handlers = {
     LaunchRequest: noopHandler,
     'AMAZON.HelpIntent': require('./handlers/help-intent'),
-    'AMAZON.CancelIntent': noopHandler,
-    'AMAZON.StopIntent': noopHandler,
+    'AMAZON.CancelIntent': require('./handlers/exit-hander'),
+    'AMAZON.StopIntent': require('./handlers/exit-hander'),
     Unhandled: noopHandler
 };
 
