@@ -9,7 +9,7 @@ const handlers = {
     'AMAZON.HelpIntent': require('./handlers/help-intent'),
     'AMAZON.CancelIntent': require('./handlers/exit-hander'),
     'AMAZON.StopIntent': require('./handlers/exit-hander'),
-    Unhandled: noopHandler
+    Unhandled: require('./handlers/unhandled-handler')
 };
 
 module.exports.handler = (event, context, callback) => {
