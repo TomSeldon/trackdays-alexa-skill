@@ -3,10 +3,14 @@
 const Alexa = require('alexa-sdk');
 
 const handlers = {
-    LaunchRequest: require('./handlers/launch'),
+    // Custom
+    FindNextTrackDayAtVenueIntent: require('./handlers/find-next-track-day-at-venue-intent'),
+
+    // Standard Alexa handlers
+    LaunchRequest: require('./handlers/launch-handler'),
     'AMAZON.HelpIntent': require('./handlers/help-intent'),
-    'AMAZON.CancelIntent': require('./handlers/exit-hander'),
-    'AMAZON.StopIntent': require('./handlers/exit-hander'),
+    'AMAZON.CancelIntent': require('./handlers/exit-handler'),
+    'AMAZON.StopIntent': require('./handlers/exit-handler'),
     Unhandled: require('./handlers/unhandled-handler')
 };
 
