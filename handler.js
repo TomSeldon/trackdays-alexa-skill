@@ -2,10 +2,8 @@
 
 const Alexa = require('alexa-sdk');
 
-const noopHandler = (event, context, callback) => callback();
-
 const handlers = {
-    LaunchRequest: noopHandler,
+    LaunchRequest: require('./handlers/launch'),
     'AMAZON.HelpIntent': require('./handlers/help-intent'),
     'AMAZON.CancelIntent': require('./handlers/exit-hander'),
     'AMAZON.StopIntent': require('./handlers/exit-hander'),
