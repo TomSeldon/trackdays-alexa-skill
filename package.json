@@ -9,7 +9,7 @@
     "author": "Tom Seldon <tom@tomseldon.co.uk>",
     "license": "ISC",
     "dependencies": {
-        "@trackdays-web-scraper/trackdays-co-uk": "0.0.1",
+        "@trackdays-web-scraper/trackdays-co-uk": "^0.1.0",
         "alexa-sdk": "^1.0.12"
     }
 }
